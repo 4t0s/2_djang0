@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        header {
+            background-color: #808ce2;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            gap: 50px;
+        }
+        body {
+            background-color: #f0f0f0;
+        }
+        a{
+            text-decoration: none;
+            color: #f0f0f0;
+        }
+        h3{
+            color : #f0f0f0;
+        }
+    </style>
+    <nav>
+        <header>
+            <h3><a href="{% url 'home' %}">Home</a></h3>
+            <h3><a href = "{% url 'auth' %}">Login</a></h3>
+        </header>
+        
+    </nav>
+</body>
+</html>
